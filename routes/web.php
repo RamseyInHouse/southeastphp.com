@@ -15,4 +15,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/admin/mail', function () {
+    $this->middleware('auth');
+
+    return view('mailer');
+});
+
 Auth::routes();

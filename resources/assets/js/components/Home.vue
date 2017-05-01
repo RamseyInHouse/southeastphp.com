@@ -28,7 +28,7 @@
 
 
     <div class="col-xs-12 info">
-      <h1 class="text-center">Southeast PHP</h1>
+      <h1 class="text-center">Southeast PHP Conference</h1>
       <h3 class="text-center">Welcome to Nashville!</h3>
       <p class="text-center">A community conference taking place in the heart of Music City! Coming in August 2018.</p>
       <p class="text-center">Join our email list for more information</p>

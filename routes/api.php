@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('email', ['uses' => 'Api\EmailController@store']);
+Route::get('emails', ['uses' => 'Api\EmailController@index']);

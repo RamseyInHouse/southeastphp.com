@@ -20,6 +20,13 @@ class EmailController extends Controller
         $this->response = $response;
     }
 
+    public function index()
+    {
+        $emails = Email::get();
+
+        return $this->response->setContent($emails);
+    }
+
     public function store(EmailRequest $request) : Int
     {
         $email = new Email();
@@ -29,5 +36,10 @@ class EmailController extends Controller
         $email->save();
 
         return $this->response->status();
+    }
+
+    public function sendEmail()
+    {
+
     }
 }

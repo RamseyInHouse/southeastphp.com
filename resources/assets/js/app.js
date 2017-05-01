@@ -16,6 +16,7 @@ window.Vue = require('vue');
  */
 
 Vue.component('home', require('./components/Home.vue'));
+Vue.component('mailer', require('./components/Admin/Email.vue'));
 
 const app = new Vue({
     el: '#app'
