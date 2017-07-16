@@ -13,9 +13,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+
+Route::post('user', ['uses' => 'Api\UserController@create']);
+Route::post('login', ['uses' => 'Api\AuthController@create']);
 
 Route::get('emails', ['uses' => 'Api\EmailController@index']);
 Route::post('email', ['uses' => 'Api\EmailController@store']);
+Route::post('airports', ['uses' => 'Api\AirportController@index']);

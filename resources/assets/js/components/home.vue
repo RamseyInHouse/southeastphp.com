@@ -44,6 +44,7 @@
         <div class="alert alert-danger" role="alert" v-if="flashErrorBanner">
           <p class="text-center">We had trouble saving your email, please try again soon!</p>
         </div>
+        <h2>hello nashville</h2>
 
         <h1 class="text-center">Southeast PHP</h1>
         <h3 class="text-center">Welcome to Nashville!</h3>
